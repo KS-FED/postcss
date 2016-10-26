@@ -1,0 +1,44 @@
+@import "a.css";
+
+$light-grey: #EDEDED;
+
+%light {
+    color:#EDEDED;
+}
+
+.a {
+    color: #ccc;
+    background: #ddd;
+}
+
+h1 {
+    @extend %light;
+    @extend .a;
+    color:red;
+}
+
+h2 {
+    @extend %light;
+}
+
+.customer-list{
+    padding: 20px;
+    background-color: $light-grey;
+    li{
+        padding: 15px;
+    }
+}
+
+
+
+
+@alias {
+    bsz: border-size;
+    bst: border-style;
+    bcl: border-color;
+}
+.set_border {
+    bsz: 1px;
+    bst: solid;
+    bcl: #ccc;
+}
